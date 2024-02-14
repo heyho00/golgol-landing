@@ -1,0 +1,59 @@
+.header {
+  background-color: #4a5568; /* Header 배경색 */
+  color: #ffffff; /* Header 글자색 */
+  padding: 1rem 0; /* Header 위아래 padding */
+}
+
+.header h1 {
+  font-size: 2rem; /* 헤더 제목 폰트 크기 */
+}
+
+.header nav ul {
+  display: flex; /* 메뉴 항목들을 가로로 나열 */
+}
+
+.header nav ul li {
+  margin-right: 1rem; /* 메뉴 항목들 간의 간격 조절 */
+}
+
+.header nav ul li a {
+  color: #ffffff; /* 메뉴 항목의 글자색 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.header nav ul li a:hover {
+  color: #a0aec0; /* 호버 시 글자색 변경 */
+}
+
+/* Main content styles */
+.main-content {
+  padding: 4rem 0; /* 메인 컨텐츠 위아래 padding */
+}
+
+.main-content h2 {
+  font-size: 1.5rem; /* 섹션 제목 폰트 크기 */
+  margin-bottom: 1.5rem; /* 섹션 제목과 내용 사이 여백 */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #4a5568; /* Footer 배경색 */
+  color: #ffffff; /* Footer 글자색 */
+  padding: 1rem 0; /* Footer 위아래 padding */
+}
+
+.textAnimation {
+  animation-name: textFadeIn;
+  animation-duration: 1.5s; /* 원하는 duration 설정 */
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px); /* 시작 시 하단에서 시작하도록 설정 */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* 최종 위치로 이동 */
+  }
+}
